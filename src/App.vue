@@ -1,19 +1,19 @@
 <template>
 <div>
 
-  <Login1/>
+  <Home/>
   
 </div>
 </template>
 
 <script>
-import Login1 from './components/Login1.vue'
+import Home from './components/Home.vue'
 
 
 export default {
   name: 'App',
   components: {
-    Login1,
+    Home,
    
   }
 }
@@ -21,10 +21,11 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: GT Walsheim Pro;
+  font-size: 17px;
   text-align: center;
-  color: #2c3e50;
+  color: #2D366A;
+  padding: 5px;
 }
+
 </style>

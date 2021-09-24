@@ -16,7 +16,7 @@
                 </ul>
                 <div class="ml-auto">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link item">Login</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
                          <button class="button-nav" type="button">Create Vendor Account</button>
                     </ul>
                 </div>
@@ -29,7 +29,8 @@
                 <div class="col-sm-6 align-items-left content">
                     <div class="hero-content">
                         <h2>Fastest Payement For Your Business</h2>
-                        <p>Receive and track payements from your shoppers, all on your dashboard. Create an account to get started.
+                        <p>Receive and track payements from your shoppers, all on your dashboard. <br> Create an account to get started.
+                            <img :src="require('@/assets/team work.png')" alt="">
                         </p>
                     </div>
                 </div>
@@ -40,19 +41,19 @@
                        <form>
                         <div class="mb-3">
                             <label for="fullname" class="form-label">Full Names</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                            <input type="text" class="form-control"> 
                         </div>
                          <div class="mb-3">
                             <label for="businessname" class="form-label">Business Name</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                            <input type="text" class="form-control"> 
                         </div>
                          <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                            <input type="number" class="form-control"> 
                         </div>
                          <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                            <input type="email" class="form-control"> 
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -91,12 +92,13 @@ export default {
     /* font: size 1px; */
 }
 p, h4{
-    text-align: left;
+    text-align: center;
 }
 .content{
     /* background-color: #E2E7FF; */
      background-color: rgb(250, 252, 253);
-    text-align: left;
+    text-align: center;
+    
 }
 .custom-nav, .container{
     background-color:#ffffff;
@@ -106,19 +108,18 @@ p, h4{
 .form-side, .form-control{
     background-color: white; 
 }
-.brandname{
-    color: black;
+.brandname, .left-nav{
+    color: #2D366A;
+    
 }
 .nav-link{
     color: gray;
 }
 .body-bg{
     background-color: #E5E5E5;
-    margin: auto;
-    margin-top:0;
 }
 h2{
-    color:navy;
+    color:rgb(2, 27, 12);
 }
 .ml-auto{
     float: right;
@@ -127,19 +128,26 @@ h2{
 .butn{
     background-color: #2D366A;
     color: white;
-    height: 56px;
-    width: 488px;
+    height: 36px;
+    width: 400px;
     left: 0px;
     top: 729.16650390625px;
     border-radius: 8px;
-    padding: 8px;
+    padding: 5px;
 }
 .button-nav{
-      background-color: #2D366A;
+      background-color: #444f8f;
     color: white;
       border-radius: 8px;
       margin-left: 60px;
-      padding: 5px;
+      margin-top: 5px;
+      padding: 0;
+      height: 30px;
+      width: 200px;
+}
+img{
+    height: 510px;
+    width: 110%;
 }
 
 </style>

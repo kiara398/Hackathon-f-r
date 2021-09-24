@@ -16,7 +16,7 @@
                 </ul>
                 <div class="ml-auto">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link item">Login</a></li>
+                        <li class="nav-item"><a href="/Login.vue" class="nav-link item">Login</a></li>
                          <button class="button-nav" type="button">Create Vendor Account</button>
                     </ul>
                 </div>
@@ -28,39 +28,28 @@
             <div class="row">
                 <div class="col-sm-6 align-items-left content">
                     <div class="hero-content">
-                        <h2>Welcome Back</h2>
+                        <h2>Let's help you recover your password</h2>
                         <p>Receive and track payements from your shoppers, all on your dashboard. Login to access your dashboard.
-                            <img :src="require('@/assets/Mask Group.png')" alt="">
+                            <img :src="require('@/assets/lady.png')" alt="">
                         </p>
                     </div>
-                    <!-- <div>
-                        
-                    </div> -->
-                </div>
+                </div> 
                  <div class="col-sm-6 form-side">
-                 <h4>Login to Vendor Account</h4>
-                   <p>Enter your Login details to access your store dashboard</p>
+                 <div class="right-side">
+                 <h4>Recover your Password</h4> <br>
+                   <p>We will send a link to your email to help you recover your password. Click the link to reset your password.</p> <br>
                    <form action="" method="post">
-                       <form>
                          <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Keep me Logged in</label>
-                        </div>
-                        <p>Forgot Password? <a href="#">Create Account</a></p>
-                        
-                        <button type="submit" class="butn">Login</button> <br> <br>
-                         <p>Have no account yet? <a href="#">Create Account</a></p> 
-</form>
+                        <br>
+                        <button type="submit" class="butn">Send Reset Link</button> <br> <br>
+                         <p>Can't remember email? <a href="#">Contact Support</a></p> 
+
                    </form>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -78,29 +67,33 @@ export default {
 <style>
 .form-label{
     float: left;
-    /* font: size 1px; */
 }
-p, h4{
+.right-side, .hero-content{
     text-align: left;
+    margin-top: 50px;
 }
 .content{
-    /* background-color: #E2E7FF; */
      background-color: rgb(250, 252, 253);
+     /* background:linear-gradient(360deg, rgb(250, 252, 253), rgb(243, 247, 250)); */
     text-align: left;
 }
 img{
     height: 410px;
 }
-.custom-nav, .container{
-    background-color:#ffffff;
-   
-        /* background-color: rgb(250, 252, 253); */
-}
-.form-side, .form-control{
+
+.form-control, .container{
     background-color: white; 
+   
+}
+.custom-nav{
+background: #FFFFFF;
+
+}
+.form-side{
+background-color: #ffffff;
 }
 .brandname{
-    color: #2D366A;
+    color:#2D366A;
 }
 .form-check-label{
     float: left;
@@ -110,11 +103,11 @@ img{
 }
 .body-bg{
     background-color: #E5E5E5;
-    height:623px;
+    height:750px;
    
 }
 h2{
-    color:navy;
+    color:#2D366A;
 }
 .ml-auto{
     float: right;
@@ -128,6 +121,7 @@ h2{
     left: 0px;
     top: 729.16650390625px;
     border-radius: 8px;
+    margin-left: 60px;
     padding: 5px;
 }
 .button-nav{

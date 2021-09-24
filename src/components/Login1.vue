@@ -1,6 +1,6 @@
 <template>
 <div class="body-bg">
-    <h4>SIGN UP</h4>
+    <h4>LOGIN</h4>
     <section class="hero-area">
         <div class="container">
                <div class="container-fluid custom-nav">
@@ -30,8 +30,12 @@
                     <div class="hero-content">
                         <h2>Welcome Back</h2>
                         <p>Receive and track payements from your shoppers, all on your dashboard. Login to access your dashboard.
+                            <img :src="require('@/assets/Mask Group.png')" alt="">
                         </p>
                     </div>
+                    <!-- <div>
+                        
+                    </div> -->
                 </div>
                  <div class="col-sm-6 form-side">
                  <h4>Login to Vendor Account</h4>
@@ -84,16 +88,21 @@ p, h4{
      background-color: rgb(250, 252, 253);
     text-align: left;
 }
-.custom-nav, .container{
+img{
+    height: 410px;
+}
+/* .container{
     background-color:#ffffff;
-   
-        /* background-color: rgb(250, 252, 253); */
+} */
+.custom-nav{
+background: #FFFFFF;
+box-shadow: 0px 2px 58px rgba(0, 0, 0, 0.05);
 }
 .form-side, .form-control{
     background-color: white; 
 }
 .brandname{
-    color: black;
+    color:#2D366A;
 }
 .form-check-label{
     float: left;
@@ -116,19 +125,22 @@ h2{
 .butn{
     background-color: #2D366A;
     color: white;
-    height: 56px;
-    width: 488px;
+    height: 36px;
+    width: 400px;
     left: 0px;
     top: 729.16650390625px;
     border-radius: 8px;
-    padding: 8px;
+    padding: 5px;
 }
 .button-nav{
-      background-color: #2D366A;
+      background-color: #444f8f;
     color: white;
       border-radius: 8px;
       margin-left: 60px;
-      padding: 5px;
+      margin-top: 5px;
+      padding: 0;
+      height: 30px;
+      width: 200px;
 }
 
 </style>
