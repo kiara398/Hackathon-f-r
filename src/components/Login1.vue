@@ -10,15 +10,16 @@
             <span class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="bi bi-list"></i></span>
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="navbar-nav left-nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">How it works</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Paymera Vendors</a></li>
+                    <li class="nav-item"><router-link to="/" class="nav-link">Features</router-link></li>
+                    <li class="nav-item"><router-link to="/" class="nav-link">How it works</router-link></li>
+                    <li class="nav-item"><router-link to="/" class="nav-link">About Paymera</router-link></li>
+                    <li class="nav-item"><router-link to="/dashboard" class="nav-link">Paymera Vendor</router-link></li>
                 </ul>
                 <div class="ml-auto">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><router-link to="/signup">SignUp</router-link>SignUp</li>
+                        <li class="nav-item"><router-link to="/login" class="nav-link">Login</router-link></li>
                         
-                         <button class="button-nav" type="button">Create Vendor Account</button>
+                         <button class="button-nav" type="button"><router-link to="/signup">Create Vendor Account</router-link></button>
                     </ul>
                 </div>
             </div>
@@ -55,10 +56,10 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Keep me Logged in</label>
                         </div>
-                        <p>Forgot Password? <a href="#">Create Account</a></p>
+                        <p>Forgot Password? <router-link to="/recover">Recover Password</router-link></p>
                         
                         <button type="submit" class="butn">Login</button> <br> <br>
-                         <p>Have no account yet? <a href="#">Create Account</a></p> 
+                         <p>Have no account yet? <router-link to="/signup">Create Account</router-link></p> 
 </form>
                    </form>
                 </div>
@@ -80,6 +81,9 @@ export default {
 .form-label{
     float: left;
     /* font: size 1px; */
+}
+.nav-item{
+    text-decoration: none;
 }
 p, h4{
     text-align: left;

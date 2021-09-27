@@ -8,17 +8,19 @@
             <span class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="bi bi-list"></i></span>
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="navbar-nav left-nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">How it works</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Paymera Vendors</a></li>
+                    <li class="nav-item"><router-link to="/" class="nav-link">Features</router-link></li>
+                    <li class="nav-item"><router-link to="/" class="nav-link">How it works</router-link></li>
+                    <li class="nav-item"><router-link to="/" class="nav-link">About Paymera</router-link></li>
+                    <li class="nav-item"><router-link to="/dashboard" class="nav-link">Paymera Vendor</router-link></li>
                 </ul>
                 <div class="ml-auto">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="/Login.vue" class="nav-link item">Login</a></li>
-                         <button class="button-nav" type="button">Create Vendor Account</button>
+                        <li class="nav-item"><router-link to="/login" class="nav-link">Login</router-link></li>
+                        
+                         <button class="button-nav" type="button"><router-link to="/signup">Create Vendor Account</router-link></button>
                     </ul>
                 </div>
-            </div>
+            </div> 
         </nav>
        </div>
         

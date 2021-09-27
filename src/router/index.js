@@ -3,6 +3,7 @@ import Home from '../components/Home.vue'
 import Login from '../components/Login1.vue'
 import Signup from '../components/Signup.vue'
 import Dashboard from '../components/HelloWorld.vue'
+import Recovery from '../components/Recovery.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: Dashboard,
+  },
+  {
+    path: '/recover',
+    name: 'recover',
+    component: Recovery,
   },
   {
     path: '/about',
