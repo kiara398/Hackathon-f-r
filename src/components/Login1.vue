@@ -16,7 +16,8 @@
                 </ul>
                 <div class="ml-auto">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link item">Login</a></li>
+                        <li class="nav-item"><router-link to="/signup">SignUp</router-link>SignUp</li>
+                        
                          <button class="button-nav" type="button">Create Vendor Account</button>
                     </ul>
                 </div>
