@@ -1,74 +1,88 @@
 <template>
 <div class="body-bg">
-        <div class="container">
-               <div class="container-fluid custom-nav">
-        <nav class="navbar navbar-expand-lg">
-            <a href="#" class="navbar-brand brandname">Paymera
-            </a>
-            <span class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="bi bi-list"></i></span>
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="navbar-nav left-nav">
-                    <li class="nav-item"><router-link to="/" class="nav-link">Features</router-link></li>
-                    <li class="nav-item"><router-link to="/" class="nav-link">How it works</router-link></li>
-                    <li class="nav-item"><router-link to="/" class="nav-link">About Paymera</router-link></li>
-                    <li class="nav-item"><router-link to="/dashboard" class="nav-link">Paymera Vendor</router-link></li>
-                </ul>
-                <div class="ml-auto">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><router-link to="/login" class="nav-link">Login</router-link></li>
-                        
-                         <button class="button-nav" type="button"><router-link to="/signup">Create Vendor Account</router-link></button>
-                    </ul>
-                </div>
-            </div> 
-        </nav>
-       </div>
-        
-    </div>
+  <Nav/>
 <div class="body">
   <h1>Make And Accept <br> Payement In <span>One Scan</span> </h1>
   <p>We built the simplest, most reliable and quickest way to make <br> payements for your business</p>
+  <div class="rect">
+
 </div>
+<div class="features">
+  <h4>Features</h4>
+  <div class="card-group">
+  <div class="card" style="width: 8rem;">
+  <img src="" class="card-img-top" alt="">
+  <div class="card-body">
+    <h4>Shop</h4>
+    <p class="card-text">We built the simplest, most reliable and quickest way to make <br> payements for your business</p>
+  </div>
+  </div>
+  <div class="card" style="width: 8rem;">
+  <img src="" class="card-img-top" alt="">
+  <div class="card-body">
+  <h4>Scan</h4>
+    <p class="card-text">We built the simplest, most reliable and quickest way to make <br> payements for your business</p>
+  </div>
+  </div>
+  <div class="card" style="width: 8rem;">
+  <img src="" class="card-img-top" alt="">
+  <div class="card-body">
+    <h4>Pay</h4>
+    <p class="card-text">We built the simplest, most reliable and quickest way to make <br> payements for your business</p>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
 </div>
 </template>
 
 <script>
+import Nav from '../components/Nav.vue'
 export default {
   name: 'Home',
   props: {
-    msg: String
+    msg: String, 
+  },
+   components:{
+    Nav
   }
+
 }
 </script>
 
 <style>
-.custom-nav, .container{
+.container{
 background: #FFFFFF;
 
 }
 .body{
   background: white;
   width: 85%;
-  height: 800px;
+  /* min-height: 100%; */
   margin: auto;
   padding-top: 60px;
-  /* box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03); */
- 
+  box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03);
+}
+.rect, .features{
+   background: white;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  padding-top: 60px;
+  box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03);
 }
 span{
   color: orangered;
 }
 
-.brandname{
-    color:#2D366A;
-}
-
-.nav-link{
-    color: gray;
-}
-.body-bg{
+body{
     background-color: #E5E5E5;
-    height:750px;
+   min-height: 100%;
+   margin: 0;
+   padding: 0;
+   width: 100%;
    
 }
 h1{
@@ -76,18 +90,5 @@ h1{
 }
 
 
-.button-nav{
-      background-color: #444f8f;
-    color: white;
-      border-radius: 8px;
-      margin-left: 60px;
-      margin-top: 5px;
-      padding: 0;
-      height: 30px;
-      width: 200px;
-}
-.ml-auto{
-    float: right;
-    margin-left: 350px;
-}
+
 </style>

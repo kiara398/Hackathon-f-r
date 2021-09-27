@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import Login from '../components/Login1.vue'
 import Signup from '../components/Signup.vue'
-import Dashboard from '../components/HelloWorld.vue'
+import Dashboard from '../components/Nav.vue'
 import Recovery from '../components/Recovery.vue'
 
 const routes = [

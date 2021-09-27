@@ -1,33 +1,10 @@
 <template>
 <div class="body-bg">
     <h4>SIGN UP</h4>
+     <Nav/>
     <section class="hero-area">
         <div class="container">
-               <div class="container-fluid custom-nav">
-        <nav class="navbar navbar-expand-lg">
-            <a href="#" class="navbar-brand brandname">Paymera
-            </a>
-            <span class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="bi bi-list"></i></span>
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="navbar-nav left-nav">
-                    <li class="nav-item"><router-link to="/" class="nav-link">Features</router-link></li>
-                    <li class="nav-item"><router-link to="/" class="nav-link">How it works</router-link></li>
-                    <li class="nav-item"><router-link to="/" class="nav-link">About Paymera</router-link></li>
-                    <li class="nav-item"><router-link to="/dashboard" class="nav-link">Paymera Vendor</router-link></li>
-                </ul>
-                <div class="ml-auto">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><router-link to="/login" class="nav-link">Login</router-link></li>
-                        
-                         <button class="button-nav" type="button"><router-link to="/signup">Create Vendor Account</router-link></button>
-                    </ul>
-                </div>
-            </div>
-            
-        </nav>
-    </div>
-   
-            <div class="row">
+         <div class="row">
                 <div class="col-sm-6 align-items-left content">
                     <div class="hero-content">
                         <h2>Fastest Payement For Your Business</h2>
@@ -83,8 +60,12 @@
 </template>
 
 <script>
+import Nav from '../components/Nav.vue'
 export default {
-    name: 'Login'
+    name: 'Login',
+     components:{
+    Nav
+  }
 }
 </script>
 
@@ -102,31 +83,21 @@ p, h4{
     text-align: center;
     
 }
-.custom-nav, .container{
+ .container{
     background-color:#ffffff;
-   
-        /* background-color: rgb(250, 252, 253); */
 }
 .form-side, .form-control{
     background-color: white; 
 }
-.brandname, .left-nav{
-    color: #2D366A;
-    
-}
-.nav-link{
-    color: gray;
-}
+
+
 .body-bg{
     background-color: #E5E5E5;
 }
 h2{
     color:rgb(2, 27, 12);
 }
-.ml-auto{
-    float: right;
-    margin-left: 350px;
-}
+
 .butn{
     background-color: #2D366A;
     color: white;
@@ -137,16 +108,7 @@ h2{
     border-radius: 8px;
     padding: 5px;
 }
-.button-nav{
-      background-color: #444f8f;
-    color: white;
-      border-radius: 8px;
-      margin-left: 60px;
-      margin-top: 5px;
-      padding: 0;
-      height: 30px;
-      width: 200px;
-}
+
 img{
     height: 510px;
     width: 110%;

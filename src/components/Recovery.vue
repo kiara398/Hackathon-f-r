@@ -1,32 +1,8 @@
 <template>
 <div class="body-bg">
-    <h4>LOGIN</h4>
     <section class="hero-area">
+        <Nav/>
         <div class="container">
-               <div class="container-fluid custom-nav">
-       <nav class="navbar navbar-expand-lg">
-            <a href="#" class="navbar-brand brandname">Paymera
-            </a>
-            <span class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="bi bi-list"></i></span>
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="navbar-nav left-nav">
-                    <li class="nav-item"><router-link to="/" class="nav-link">Features</router-link></li>
-                    <li class="nav-item"><router-link to="/" class="nav-link">How it works</router-link></li>
-                    <li class="nav-item"><router-link to="/" class="nav-link">About Paymera</router-link></li>
-                    <li class="nav-item"><router-link to="/dashboard" class="nav-link">Paymera Vendor</router-link></li>
-                </ul>
-                <div class="ml-auto">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><router-link to="/login" class="nav-link">Login</router-link></li>
-                        
-                         <button class="button-nav" type="button"><router-link to="/signup">Create Vendor Account</router-link></button>
-                    </ul>
-                </div>
-            </div>
-            
-        </nav>
-    </div>
-   
             <div class="row">
                 <div class="col-sm-6 align-items-left content">
                     <div class="hero-content">
@@ -61,8 +37,12 @@
 </template>
 
 <script>
+import Nav from '../components/Nav.vue'
 export default {
-    name: 'Login'
+    name: 'Login',
+    components:{
+    Nav
+  }
 }
 </script>
 
@@ -72,49 +52,37 @@ export default {
 }
 .right-side, .hero-content{
     text-align: left;
-    margin-top: 50px;
+    padding-top: 50px;
+    
 }
 .content{
      background-color: rgb(250, 252, 253);
-     /* background:linear-gradient(360deg, rgb(250, 252, 253), rgb(243, 247, 250)); */
     text-align: left;
+    
 }
 img{
     height: 410px;
 }
 
 .form-control, .container{
-    background-color: white; 
-   
+    background-color: white;  
 }
-.custom-nav{
-background: #FFFFFF;
 
-}
 .form-side{
 background-color: #ffffff;
-}
-.brandname{
-    color:#2D366A;
 }
 .form-check-label{
     float: left;
 }
-.nav-link{
-    color: gray;
-}
+
 .body-bg{
     background-color: #E5E5E5;
     height:750px;
-   
 }
 h2{
     color:#2D366A;
 }
-.ml-auto{
-    float: right;
-    margin-left: 350px;
-}
+
 .butn{
     background-color: #2D366A;
     color: white;
@@ -126,15 +94,6 @@ h2{
     margin-left: 60px;
     padding: 5px;
 }
-.button-nav{
-      background-color: #444f8f;
-    color: white;
-      border-radius: 8px;
-      margin-left: 60px;
-      margin-top: 5px;
-      padding: 0;
-      height: 30px;
-      width: 200px;
-}
+
 
 </style>
