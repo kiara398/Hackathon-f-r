@@ -10,21 +10,21 @@
 <div class="features">
   <h4>Features</h4>
   <div class="card-group">
-  <div class="card" style="width: 8rem;">
+  <div class="card ">
   <img src="" class="card-img-top" alt="">
   <div class="card-body">
     <h4>Shop</h4>
     <p class="card-text">We built the simplest, most reliable and quickest way to make <br> payements for your business</p>
   </div>
   </div>
-  <div class="card" style="width: 8rem;">
+  <div class="card">
   <img src="" class="card-img-top" alt="">
   <div class="card-body">
   <h4>Scan</h4>
     <p class="card-text">We built the simplest, most reliable and quickest way to make <br> payements for your business</p>
   </div>
   </div>
-  <div class="card" style="width: 8rem;">
+  <div class="card">
   <img src="" class="card-img-top" alt="">
   <div class="card-body">
     <h4>Pay</h4>
@@ -65,14 +65,22 @@ background: #FFFFFF;
   padding-top: 60px;
   box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03);
 }
-.rect, .features{
+.rect{
    background: white;
-  width: 100%;
+  width: 80%;
   height: 300px;
   margin: auto;
   padding-top: 60px;
   box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03);
 }
+ .features{
+ background: white;
+  width: 100%;
+  height: 800px;
+  margin: auto;
+  padding-top: 60px;
+  box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03);
+ }
 span{
   color: orangered;
 }
@@ -88,7 +96,21 @@ body{
 h1{
     color:#2D366A;
 }
-
+.card {
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    max-width: 124vh;
+    max-height: 100vh;
+    margin: 12px ;
+    /* transition: .15s all ease-in-out; */
+}
+.card-body{
+   max-width: 84vh;
+    max-height: 100vh;
+    margin: 12px;
+}
+.card-img-top{
+  height: 150px;
+}
 
 
 </style>

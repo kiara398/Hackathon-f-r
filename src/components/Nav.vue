@@ -1,28 +1,35 @@
 <template>
-  <div class="nav">
-  <div class="container-fluid custom-nav">
-        <nav class="navbar navbar-expand-lg">
-            <a href="#" class="navbar-brand brandname">Paymera
-            </a>
-            <span class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><i class="bi bi-list"></i></span>
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="navbar-nav left-nav">
-                    <li class="nav-item"><router-link to="/" class="nav-link">Features</router-link></li>
-                    <li class="nav-item"><router-link to="/" class="nav-link">How it works</router-link></li>
-                    <li class="nav-item"><router-link to="/" class="nav-link">About Paymera</router-link></li>
-                    <li class="nav-item"><router-link to="/dashboard" class="nav-link">Paymera Vendor</router-link></li>
-                </ul>
-                <div class="ml-auto">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><router-link to="/login" class="nav-link">Login</router-link></li>
-                        
-                         <button class="button-nav" type="button"><router-link to="/signup" class="btn-link">Create Vendor Account</router-link></button>
-                    </ul>
-                </div>
-            </div> 
-        </nav>
+  <div class="gen-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Paymera</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <router-link to="/" class="nav-link">Features</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/" class="nav-link">How it works</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/" class="nav-link">About Paymera</router-link>
+        </li>
+        <li class="nav-item">
+        <router-link to="/dashboard" class="nav-link">Paymera Vendor</router-link>
+        </li>
+      </ul>
+      <ul class="d-flex">
+       <router-link to="/login" class="nav-link">Login</router-link>
+         <button class="button-nav" type="button"><router-link to="/signup" class="btn-link">Create Vendor Account</router-link></button>
+      </ul>
+    </div>
   </div>
+</nav>
   </div>
+
 </template>
 
 <script>
@@ -62,9 +69,10 @@ export default {
 .nav-link{
     color: gray;
 }
-.custom-nav{
-  background-color: white;
+.gen-nav{
+  margin: auto;
   width: 84.6%;
+box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;  
 }
 
 </style>

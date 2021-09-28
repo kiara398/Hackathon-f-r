@@ -56,8 +56,9 @@ export default {
     
 }
 .content{
-     background-color: rgb(250, 252, 253);
+      background: rgba(226, 231, 255, 0.16);
     text-align: left;
+    
     
 }
 img{
@@ -69,7 +70,8 @@ img{
 }
 
 .form-side{
-background-color: #ffffff;
+background-color: rgba(225, 225, 255, 0);
+ 
 }
 .form-check-label{
     float: left;

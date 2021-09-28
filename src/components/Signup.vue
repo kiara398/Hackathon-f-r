@@ -78,8 +78,8 @@ p, h4{
     text-align: center;
 }
 .content{
-    /* background-color: #E2E7FF; */
-     background-color: rgb(250, 252, 253);
+    
+     background: rgba(226, 231, 255, 0.16);
     text-align: center;
     
 }
@@ -87,7 +87,7 @@ p, h4{
     background-color:#ffffff;
 }
 .form-side, .form-control{
-    background-color: white; 
+    background-color: rgba(225, 225, 255, 0);
 }
 
 

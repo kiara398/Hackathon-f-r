@@ -5,8 +5,8 @@
     <section class="hero-area">
         <div class="container">
            
-            <div class="row">
-                <div class="col-sm-6 align-items-left content">
+            <div class="row row-cols-2">
+                <div class="col">
                     <div class="hero-content">
                         <h2>Welcome Back</h2>
                         <p>Receive and track payements from your shoppers, all on your dashboard. Login to access your dashboard.
@@ -14,7 +14,7 @@
                         </p>
                     </div>
                 </div>
-                 <div class="col-sm-6 form-side">
+                 <div class="col">
                  <h4>Login to Vendor Account</h4>
                    <p>Enter your Login details to access your store dashboard</p>
                    <form action="" method="post">
@@ -62,30 +62,33 @@ export default {
     /* font: size 1px; */
 }
 
+
 p, h4{
-    text-align: left;
+    text-align: center;
 }
 .content{
-    /* background-color: #E2E7FF; */
-     background-color: rgb(250, 252, 253);
-    text-align: left;
+     background: rgba(226, 231, 255, 0.16);
+    text-align: center;
 }
 img{
     height: 410px;
 }
 
 
-.form-side, .form-control{
-    background-color: white; 
+.form-side {
+    padding-top: 60px;
+    background-color: rgba(225, 225, 255, 0);
 }
 
 .form-check-label{
     float: left;
 }
 
+
 .body-bg{
     background-color: #E5E5E5;
     height:623px;
+  
    
 }
 h2{
