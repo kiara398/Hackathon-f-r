@@ -4,7 +4,11 @@
         <Sidebar/>
         <div class="content">
         <div class="search-wrapper">
-            <input type="text" v-model="search" placeholder="Search item.."/>
+            <input type="text" v-model="search" placeholder="Search item.."/> 
+            <div class="icon">
+                <fas icon="user-circle"/> 
+                Quennette Onyekachi
+                </div> 
     </div>
     <div class="dash-body">
         <h5>Hey, Queennette</h5>
@@ -14,18 +18,17 @@
             <div class="col-8">
                 <div class="rect1">
                 <h5>Account Balance</h5> 
-               <h3>N 0.00 <button class="btn1">Add New Item</button></h3>
+               <h3>N 0.00 <button class="btn btn1">Add New Item</button></h3>
                 </div>
             </div>
             <div class="col-4">
                 <div class="rect2">
-                  <!-- <button class="btn1">Gift Vouchers</button> -->
                 </div>
             </div>
 </div>
 <div class="contents">
         <p>You currently do not have any products listed. <br> Kindly add items to your inventory to start <br> receiving payements</p>
-        <button class="butn">Add New Item</button>
+        <button class="btn butn"><router-link to="/scan" class="btn-link">New Item </router-link></button>
     </div>
         </div> 
     </div>
@@ -36,11 +39,13 @@
 </template>
 
 <script> 
+
 import Sidebar from '../components/Sidebar.vue'
 export default {
     components:{
         Sidebar
     }
+    
 }
 </script>
 
@@ -52,7 +57,9 @@ export default {
     height: 100vh;
     width: 85vw;
     margin: auto;
+    margin-top: 40px;
 }
+
 .content{
     background-color: white;
 }
@@ -76,13 +83,18 @@ border-radius: 10px;
 input{
     width: 40%;
     display: block;
-    border-radius: 8px;
+    border-radius: 4px;
+    padding: 5px;
     border: none;
     background: #E5E5E5;
     margin: 20px;
 }
 .contents{
     margin-top: 220px;
+}
+.btn-link{
+    color: white;
+    text-decoration: none;
 }
 .container{
     margin-top: 40px;
@@ -108,7 +120,27 @@ input{
     width: 200px;
 }
 .dash-body{
+    padding: 15px;
     height: 90%;
     box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03);
 }
+.search-wrapper{
+width: 100%;
+height: 70px;
+background: #FFFFFF;
+box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.03);
+}
+.icon{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 231px;
+height: 40px;
+left: 1000px;
+top: 55px;
+}
+
 </style>

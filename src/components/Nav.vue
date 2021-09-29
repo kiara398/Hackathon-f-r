@@ -23,7 +23,7 @@
       </ul>
       <ul class="d-flex">
        <router-link to="/login" class="nav-link">Login</router-link>
-         <button class="button-nav" type="button"><router-link to="/signup" class="btn-link">Create Vendor Account</router-link></button>
+         <button class="btn button-nav" type="button"><router-link to="/signup" class="btn-link">Create Vendor Account</router-link></button>
       </ul>
     </div>
   </div>

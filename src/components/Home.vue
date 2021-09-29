@@ -20,7 +20,7 @@
   <div class="card">
   <img src="" class="card-img-top" alt="">
   <div class="card-body">
-  <h4>Scan</h4>
+  <router-link to="/cart" class="r-link"><h4>Scan</h4></router-link>
     <p class="card-text">We built the simplest, most reliable and quickest way to make <br> payements for your business</p>
   </div>
   </div>
@@ -55,7 +55,10 @@ export default {
 <style>
 .container{
 background: #FFFFFF;
-
+}
+.r-link,h4{
+  color: black;
+  text-decoration: none;
 }
 .body{
   background: white;

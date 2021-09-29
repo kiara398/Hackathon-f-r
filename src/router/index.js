@@ -4,6 +4,8 @@ import Login from '../components/Login1.vue'
 import Signup from '../components/Signup.vue'
 import Dashboard from '../components/Dashboard.vue'
 import Recovery from '../components/Recovery.vue'
+import Scan from '../components/Scan.vue'
+import Cart from '../components/Cart.vue'
 
 const routes = [
   {
@@ -25,6 +27,16 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: Dashboard,
+  },
+  {
+    path: '/scan',
+    name: 'scan',
+    component: Scan,
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: Cart,
   },
   {
     path: '/recover',

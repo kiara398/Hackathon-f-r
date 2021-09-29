@@ -22,7 +22,7 @@
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
                         </div>
                         <br>
-                        <button type="submit" class="butn">Send Reset Link</button> <br> <br>
+                        <button type="submit" class="btn butn">Send Reset Link</button> <br> <br>
                          <p>Can't remember email? <a href="#">Contact Support</a></p> 
 
                    </form>

@@ -6,7 +6,7 @@
         <div class="container">
            
             <div class="row row-cols-2">
-                <div class="col">
+                <div class="col content">
                     <div class="hero-content">
                         <h2>Welcome Back</h2>
                         <p>Receive and track payements from your shoppers, all on your dashboard. Login to access your dashboard.
@@ -33,7 +33,7 @@
                         </div>
                         <p>Forgot Password? <router-link to="/recover">Recover Password</router-link></p>
                         
-                        <button type="submit" class="butn">Login</button> <br> <br>
+                        <button type="submit" class="btn butn">Login</button> <br> <br>
                          <p>Have no account yet? <router-link to="/signup">Create Account</router-link></p> 
 </form>
                    </form>

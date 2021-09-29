@@ -47,7 +47,7 @@
                             <label class="form-check-label" for="exampleCheck1">I would like to receive promotional emails and offers from Paymera</label>
                         </div>
                         
-                        <button type="submit" class="butn">Create Vendor Account</button>
+                        <button type="submit" class="btn butn">Create Vendor Account</button>
 </form>
                    </form>
                 </div>
