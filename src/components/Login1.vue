@@ -1,6 +1,6 @@
 <template>
 <div class="body-bg">
-    <h4>LOGIN</h4>
+    <h5>LOGIN</h5>
      <Nav/>
     <section class="hero-area">
         <div class="container">
@@ -17,15 +17,18 @@
                  <div class="col">
                  <h4>Login to Vendor Account</h4>
                    <p>Enter your Login details to access your store dashboard</p>
-                   <form action="" method="post">
-                       <form>
+                   <form action="" method="post" @submit="checkForm">
                          <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                            <p v-if="errors.length" class="error">
+                            <b>Email is required!:</b> </p>
+                            <input type="email" class="form-control" id="exampleInputEmail1" v-model="email" name="email"> 
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <p v-if="errors.length" class="error">
+                            <b>password is required!:</b> </p>
+                            <input type="password" class="form-control" id="exampleInputPassword1" v-model="password" name="password">
                         </div>
                          <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -35,7 +38,6 @@
                         
                         <button type="submit" class="btn butn">Login</button> <br> <br>
                          <p>Have no account yet? <router-link to="/signup">Create Account</router-link></p> 
-</form>
                    </form>
                 </div>
             </div>
@@ -52,45 +54,53 @@ export default {
     name: 'Login',
      components:{
     Nav
+  },
+   data() {
+       return{
+    errors: [],
+    email: null,
+    password: null
+       }
+    
+  },
+  methods:{
+    checkForm: function (e) {
+      if (this.email && this.password) {
+        return true;
+      }
+
+      this.errors = [];
+
+      if (!this.email || !this.password) {
+        this.errors.push('fields required.');
+      }
+
+      e.preventDefault();
+    }
   }
 }
+    
+
 </script>
 
 <style>
 .form-label{
     float: left;
-    /* font: size 1px; */
 }
 
 
-p, h4{
-    text-align: center;
-}
-.content{
-     background: rgba(226, 231, 255, 0.16);
+ h4{
+    margin-top: 40px;
     text-align: center;
 }
 img{
     height: 410px;
 }
 
-
-.form-side {
-    padding-top: 60px;
-    background-color: rgba(225, 225, 255, 0);
-}
-
 .form-check-label{
     float: left;
 }
 
-
-.body-bg{
-    background-color: #E5E5E5;
-    height:623px;
-  
-   
-}
 h2{
     color:navy;
 }

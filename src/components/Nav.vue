@@ -1,6 +1,6 @@
 <template>
   <div class="gen-nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Paymera</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,8 +70,9 @@ export default {
     color: gray;
 }
 .gen-nav{
+  background-color: rgb(253, 253, 253);
   margin: auto;
-  width: 84.6%;
+  width:84.3%;
 box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;  
 }
 

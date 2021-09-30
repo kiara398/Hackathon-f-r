@@ -13,7 +13,7 @@
     <div class="dash-body">
         <h5>Hey, Queennette</h5>
         Ready to get paid Faster?
-        <div class="container">
+        <br>
             <div class="row">
             <div class="col-8">
                 <div class="rect1">
@@ -25,7 +25,6 @@
                 <div class="rect2">
                 </div>
             </div>
-</div>
 <div class="contents">
         <p>You currently do not have any products listed. <br> Kindly add items to your inventory to start <br> receiving payements</p>
         <button class="btn butn"><router-link to="/scan" class="btn-link">New Item </router-link></button>
@@ -54,6 +53,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 5fr;
     background-color: rgb(250, 252, 253);
+     box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
     height: 100vh;
     width: 85vw;
     margin: auto;
@@ -71,6 +71,7 @@ color: white;
 padding: 10px;
 background: #2D366A;
 border-radius: 10px;
+margin-top: 10px;
 }
 .rect2{
 position: absolute;
@@ -79,6 +80,7 @@ height: 100px;
 padding: 10px;
 background: #F5A623;
 border-radius: 10px;
+margin-top: 10px;
 }
 input{
     width: 40%;
@@ -91,6 +93,7 @@ input{
 }
 .contents{
     margin-top: 220px;
+    padding-bottom: 30px;
 }
 .btn-link{
     color: white;
@@ -135,7 +138,6 @@ box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.03);
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 0px;
 position: absolute;
 width: 231px;
 height: 40px;

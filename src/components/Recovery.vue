@@ -1,5 +1,6 @@
 <template>
 <div class="body-bg">
+<h5>RECOVER PASSWORD</h5>
     <section class="hero-area">
         <Nav/>
         <div class="container">
@@ -50,7 +51,7 @@ export default {
 .form-label{
     float: left;
 }
-.right-side, .hero-content{
+ .hero-content{
     text-align: left;
     padding-top: 50px;
     
@@ -78,7 +79,7 @@ background-color: rgba(225, 225, 255, 0);
 }
 
 .body-bg{
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     height:750px;
 }
 h2{

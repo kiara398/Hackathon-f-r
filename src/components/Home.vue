@@ -62,7 +62,7 @@ background: #FFFFFF;
 }
 .body{
   background: white;
-  width: 85%;
+  width: 84.6%;
   /* min-height: 100%; */
   margin: auto;
   padding-top: 60px;
@@ -89,7 +89,7 @@ span{
 }
 
 body{
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
    min-height: 100%;
    margin: 0;
    padding: 0;

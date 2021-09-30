@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 .sidebar{
-  padding: 25px;
+  padding: 25px; 
 }
 .active{
   color: rgb(68, 68, 68);
