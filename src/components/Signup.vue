@@ -1,28 +1,19 @@
 <template>
-<div class="body-bg">
-    <h5>SIGN UP</h5>
+<div>
      <Nav/>
-    <section class="hero-area">
-        <div class="container">
-         <div class="row">
+         <div class="row contentDiv">
                 <div class="col-sm-6 align-items-left content">
                     <div class="hero-content">
                         <h2>Fastest Payement For Your Business</h2>
                         <p>Receive and track payements from your shoppers, all on your dashboard. <br> Create an account to get started.
-                            <img :src="require('@/assets/team work.png')" alt="">
+                            <img :src="require('@/assets/team work.png')" alt="" class="anime">
                         </p>
                     </div>
                 </div>
                  <div class="col-sm-6 form-side">
                    <h4>Create Account</h4>
                    <p>Fill your business information in the required fields</p>
-                   <form action="" method="post"  @submit="checkForm">
-                         <!-- <p v-if="errors.length">
-                            <b>Form cannot be empty!:</b>
-                                <ul>
-                                 <li :v-for="error in errors">{{ error }}</li>
-                                  </ul>
-                        </p> -->
+                   <form class="frm" action="/registerUser" method="post"  @submit="checkForm">
                         <div class="mb-3">
                             <label for="fullname" class="form-label">Full Names</label>
                             <p v-if="errors.length" class="error">
@@ -56,20 +47,18 @@
                          <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">By signing up, you agree to Paymera Terms of use and privacy policy</label>
-                        </div>
+                        </div> <br />
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">I would like to receive promotional emails and offers from Paymera</label>
                         </div>
                         
-                        <button type="submit" class="btn butn">Create Vendor Account</button>
+                        <button type="submit" class="btn">Create Vendor Account</button>
                    </form>
                 </div>
             </div>
         </div>
-    </section>
    
-</div> 
    
 </template>
 
@@ -114,7 +103,6 @@ export default {
 <style>
 .form-label{
     float: left;
-    /* font: size 1px; */
 }
 p, h4,h2{
     text-align: center;
@@ -150,17 +138,17 @@ h2{
 .butn{
     background-color: #2D366A;
     color: white;
-    height: 36px;
+    /* height: 36px;
     width: 400px;
     left: 0px;
-    top: 729.16650390625px;
+    top: 729.16650390625px; */
     border-radius: 8px;
     padding: 5px;
 }
 
 img{
-    height: 510px;
-    width: 110%;
+    height: 100vh;
+    width: 100%;
 }
 
 </style>

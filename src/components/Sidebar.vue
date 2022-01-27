@@ -7,30 +7,31 @@
             <router-link to="/dashboard" class="active"> 
             <div class="link-container">
               <fas icon="th-large"/>
-                Dashboard
+                <p class="iconText">Dashboard</p>
             </div>
             </router-link>
               <router-link to="/" class="active">
             <div class="link-container">
               <fas icon="file"/>
-                Inventory
+                <p class="iconText"> Inventory </p>
             </div>
             </router-link>
               <router-link to="/cart" class="active" >
             <div class="link-container">
-             Payments
+              <fas icon="beer"/>
+             <p class=""> Payments </p>
             </div>
             </router-link>
               <router-link to="/" class="active" >
             <div class="link-container">
               <fas icon="cog"/>
-              Settings
+               <p class="iconText">Settings </p>
             </div>
             </router-link>
               <router-link to="/" class="active" >
             <div class="link-container logout">
               <fas icon="sign-out"/>
-                 Logout
+              Logout
             </div>
             </router-link>
         </div>
@@ -45,19 +46,19 @@ export default {
 
 <style scoped>
 .sidebar{
-  padding: 25px; 
+  padding: 15%; 
 }
 .active{
   color: rgb(68, 68, 68);
   text-decoration: none;
-  padding: 25px;
 }
 .logout{
    color: rgb(68, 68, 68);
   text-decoration: none;
   margin-top: 100px;
 }
-.menu-item, .link-container{
-  padding: 10px;
+ .link-container{
+  padding: 8%;
+  justify-content: space-evenly;
 }
 </style>

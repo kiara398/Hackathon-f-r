@@ -62,10 +62,8 @@ background: #FFFFFF;
 }
 .body{
   background: white;
-  width: 84.6%;
-  /* min-height: 100%; */
   margin: auto;
-  padding-top: 60px;
+  padding-top: 5%; ;
   box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03);
 }
 .rect{
@@ -73,7 +71,7 @@ background: #FFFFFF;
   width: 80%;
   height: 300px;
   margin: auto;
-  padding-top: 60px;
+  padding-top: 5%;
   box-shadow: 0px -15px 22px rgba(0, 0, 0, 0.03);
 }
  .features{
@@ -89,7 +87,7 @@ span{
 }
 
 body{
-    /* background-color: #E5E5E5; */
+ 
    min-height: 100%;
    margin: 0;
    padding: 0;

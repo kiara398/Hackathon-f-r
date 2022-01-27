@@ -1,23 +1,19 @@
 <template>
-<div class="body-bg">
-    <h5>LOGIN</h5>
+<div>
      <Nav/>
-    <section class="hero-area">
-        <div class="container">
-           
-            <div class="row row-cols-2">
-                <div class="col content">
+            <div class="row contentDiv">
+                <div class="col-md-6 sm-12 content">
                     <div class="hero-content">
                         <h2>Welcome Back</h2>
                         <p>Receive and track payements from your shoppers, all on your dashboard. Login to access your dashboard.
-                            <img :src="require('@/assets/Mask Group.png')" alt="">
+                            <img :src="require('@/assets/Mask Group.png')" alt="" class="anime">
                         </p>
                     </div>
                 </div>
-                 <div class="col">
+                 <div class="col-md-6 sm-12">
                  <h4>Login to Vendor Account</h4>
                    <p>Enter your Login details to access your store dashboard</p>
-                   <form action="" method="post" @submit="checkForm">
+                   <form class='frm' action="" method="post" @submit="checkForm">
                          <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
                             <p v-if="errors.length" class="error">
@@ -36,16 +32,12 @@
                         </div>
                         <p>Forgot Password? <router-link to="/recover">Recover Password</router-link></p>
                         
-                        <button type="submit" class="btn butn">Login</button> <br> <br>
+                        <button type="submit" class="btn">Login</button> <br> <br>
                          <p>Have no account yet? <router-link to="/signup">Create Account</router-link></p> 
                    </form>
                 </div>
             </div>
         </div>
-    </section>
-   
-</div> 
-   
 </template>
 
 <script>
@@ -93,8 +85,8 @@ export default {
     margin-top: 40px;
     text-align: center;
 }
-img{
-    height: 410px;
+.frm{
+    padding: 5%;
 }
 
 .form-check-label{
@@ -104,19 +96,16 @@ img{
 h2{
     color:navy;
 }
-.ml-auto{
-    float: right;
-    margin-left: 350px;
+.contentDiv{
+    max-width: 100%;
 }
-.butn{
+
+.btn{
     background-color: #2D366A;
     color: white;
-    height: 36px;
-    width: 400px;
-    left: 0px;
-    top: 729.16650390625px;
+    width: 50%;
     border-radius: 8px;
-    padding: 5px;
+    padding: 5px 20px;
 }
 
 
