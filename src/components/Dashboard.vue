@@ -50,9 +50,9 @@ export default {
     display: grid;
     grid-template-columns: 1fr 5fr;
     background-color: rgb(250, 252, 253);
-     box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+     /* box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 2%; */
 }
 
 .content{
@@ -89,7 +89,7 @@ input{
     padding: 5px;
     border: none;
     background: #E5E5E5;
-    margin: 20px;
+    margin: 2%;
 }
 .contents{
     margin-top: 12%;

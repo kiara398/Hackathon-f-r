@@ -5,7 +5,7 @@
   <h1>Make And Accept <br> Payement In <span>One Scan</span> </h1>
   <p>We built the simplest, most reliable and quickest way to make <br> payements for your business</p>
   <div class="rect">
-
+ 
 </div>
 <div class="features">
   <h4>Features</h4>
@@ -47,12 +47,14 @@ export default {
   },
    components:{
     Nav
-  }
+  },
+ 
 
 }
 </script>
 
 <style>
+
 .container{
 background: #FFFFFF;
 }
@@ -115,3 +117,4 @@ h1{
 
 
 </style>
+
